@@ -97,13 +97,15 @@ La licencia AGPL va un paso más allá: si modificas el programa y lo ofreces co
 
 | Dato | Valor | Fuente | Fecha de consulta |
 |---|---|---|---|
-| Licencia |  |  |  |
-| Versión vigente |  |  |  |
-| Lenguaje del servidor |  |  |  |
-| SGBD compatibles |  |  |  |
-| Modalidad (local / nube) |  |  |  |
-| Módulos principales |  |  |  |
-| Requisitos |  |  |  |
+| Licencia | Propietaria y comercial. Se contrata por suscripción SaaS por usuario y edición; no hay acceso al código fuente | [Salesforce Releases - Salesforce](https://www.salesforce.com/products/innovation/releases/) | 25/09/2026 |
+| Versión vigente | Winter '27 (en despliegue desde septiembre de 2026). Salesforce publica 3 versiones al año: Spring (febrero), Summer (junio) y Winter (octubre) | [Salesforce Releases - Salesforce](https://www.salesforce.com/products/innovation/releases/) · [Winter '27 Release Notes - Salesforce Help](https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.salesforce_release_notes.htm&release=264&type=5) | 25/09/2026 |
+| Lenguaje del servidor | Apex, lenguaje propietario parecido a Java que se ejecuta solo en los servidores de Salesforce | [What is Apex? - Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apex/apex_intro_what_is_apex.htm) | 25/09/2026 |
+| SGBD compatibles | No se elige: la base de datos es interna y multiinquilino (compartida entre clientes), gestionada por Salesforce. Los datos se consultan con su propio lenguaje, SOQL | [What is Apex? - Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apex/apex_intro_what_is_apex.htm) | 25/09/2026 |
+| Modalidad (local / nube) | Solo nube (SaaS). No existe instalación local | [Salesforce Releases - Salesforce](https://www.salesforce.com/products/innovation/releases/) | 25/09/2026 |
+| Módulos principales | Sales Cloud (ventas), Service Cloud (atención al cliente), Marketing Cloud, Commerce Cloud, Experience Cloud (portales), Data 360 (datos), Agentforce (agentes de IA) y analítica | [Winter '27 Release Notes - Salesforce Help](https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.salesforce_release_notes.htm&release=264&type=5) | 25/09/2026 |
+| Requisitos | Solo en el lado del cliente: última versión de un navegador compatible (Chrome, Edge, Firefox o Safari) y conexión a Internet. Internet Explorer 11 no está soportado desde el 01/01/2023. En móvil, app oficial de Salesforce | [Supported Browsers - Salesforce Developers](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-supported-browsers.html) | 25/09/2026 |
+
+**Observación:** igual que Oracle, Salesforce es SaaS puro: la empresa no instala ni administra servidor ni base de datos, pero depende totalmente del proveedor, y el código Apex solo funciona dentro de Salesforce, lo que dificulta una migración futura.
 
 ## 4. Fe de erratas del tema 2
 
