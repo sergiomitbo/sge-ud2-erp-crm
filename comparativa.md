@@ -109,6 +109,28 @@ La licencia AGPL va un paso más allá: si modificas el programa y lo ofreces co
 
 ## 4. Fe de erratas del tema 2
 
+### 4.1 Licencia de ERPNext
+
+- **Qué dice el tema (apartado 6):** ERPNext "cuenta con una versión de código abierto bajo licencia LGPLv3".
+- **Qué es correcto hoy:** el código de ERPNext se publica bajo la **GNU General Public License v3 (GPLv3)**, no la LGPLv3. La diferencia importa: la GPLv3 es copyleft completo (cualquier obra derivada que se distribuya debe ser también GPL), mientras que la LGPLv3 permite enlazarla desde software no libre.
+- **Fuente:** [Repositorio oficial de ERPNext - GitHub](https://github.com/frappe/erpnext) (apartado License), consultado el 25/09/2026.
+
+### 4.2 Versión actual de Odoo
+
+- **Qué dice el tema (apartado 6):** "su versión actual es la 14" y que el servidor "requiere la versión 3.10 o posterior de Python".
+- **Qué es correcto hoy:** la versión vigente es **Odoo 19**. Además, el propio tema es incoherente: exigir Python 3.10 o superior corresponde a versiones recientes de Odoo, no a la 14.
+- **Fuente:** [Documentación oficial de Odoo 19](https://www.odoo.com/documentation/19.0/) y [Odoo 19 - Source install](https://www.odoo.com/documentation/19.0/administration/on_premise/source.html), consultados el 25/09/2026.
+
+### 4.3 Versión y SGBD de SuiteCRM
+
+- **Qué dice el tema (apartado 8):** SuiteCRM "puede funcionar en gestores de bases de datos como MySQL, MariaDB o SQL Server" y su versión es la 7.14.5.
+- **Qué es correcto hoy:** la versión vigente es **SuiteCRM 8.10.2** (publicada el 31/07/2026), y la matriz de compatibilidad de la versión 8.10 solo admite **MariaDB y MySQL**; SQL Server ya no aparece como compatible.
+- **Fuente:** [8.10 Releases - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/releases/8.10/) y [Compatibility Matrix - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/compatibility-matrix/), consultados el 25/09/2026.
+
+### 4.4 Otras incoherencias menores
+
+- El tema escribe "Phyton" en lugar de **Python** en los apartados de ERPNext y Odoo.
+
 ## 5. Matriz de decisión y recomendación
 
 Empresa: **N.º 6 - Consultora internacional** (400 empleados en 5 países, multimoneda, varias sociedades, cumplimiento normativo y todo en la nube).
