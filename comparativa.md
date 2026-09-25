@@ -110,3 +110,72 @@ La licencia AGPL va un paso más allá: si modificas el programa y lo ofreces co
 ## 4. Fe de erratas del tema 2
 
 ## 5. Matriz de decisión y recomendación
+
+Empresa: **N.º 6 - Consultora internacional** (400 empleados en 5 países, multimoneda, varias sociedades, cumplimiento normativo y todo en la nube).
+
+Opciones evaluadas:
+
+- **Opción 1:** Oracle Fusion Cloud ERP + Salesforce (propietario, SaaS).
+- **Opción 2:** Odoo Enterprise en Odoo.sh (ERP y CRM integrados, open core de pago).
+- **Opción 3:** Odoo Community + SuiteCRM alojados en una nube propia (libre).
+
+Los datos completos están en `matriz_decision.csv`. Escala: 1 (muy malo) a 5 (muy bueno).
+
+### 5.1 Justificación de las puntuaciones
+
+**Multimoneda y multisociedad (peso 25).** Es el criterio más importante porque la empresa opera con varias sociedades y monedas.
+- Opción 1 (5): Oracle está diseñado para grandes grupos multinacionales, con consolidación entre sociedades y varias monedas.
+- Opción 2 (4): Odoo Enterprise gestiona varias empresas y monedas, pero la consolidación de un grupo en 5 países es menos madura que en Oracle.
+- Opción 3 (2): Odoo Community tiene funciones contables más limitadas y SuiteCRM es un sistema aparte, así que habría que unir los datos a mano o con desarrollos propios.
+
+**Cumplimiento normativo en 5 países (peso 20).** Cada país tiene su fiscalidad, facturación y protección de datos.
+- Opción 1 (5): Oracle y Salesforce ofrecen localizaciones legales para muchos países y certificaciones de seguridad propias del proveedor.
+- Opción 2 (3): Odoo tiene localizaciones fiscales, pero su calidad varía según el país y puede requerir módulos de terceros.
+- Opción 3 (2): las adaptaciones legales dependen de la comunidad o de desarrollos propios, y el cumplimiento recae por completo en la empresa.
+
+**Coste total de propiedad (peso 15).**
+- Opción 1 (1): es la opción más cara: suscripción de dos productos para 400 usuarios, más la implantación con consultores especializados.
+- Opción 2 (4): la suscripción de Odoo Enterprise es bastante más barata y un único producto reduce el coste de implantación.
+- Opción 3 (3): no hay coste de licencia, pero sí de alojamiento, administración, desarrollo de localizaciones e integración entre ERP y CRM, que en una empresa de este tamaño es elevado.
+
+**Nube y escalabilidad (peso 15).** La empresa exige que todo esté en la nube.
+- Opción 1 (5): ambos productos son SaaS puro; el proveedor gestiona servidores, copias y actualizaciones.
+- Opción 2 (4): Odoo.sh es nube gestionada por Odoo, aunque con más responsabilidad técnica para el cliente que un SaaS puro.
+- Opción 3 (3): se puede desplegar en una nube pública, pero la empresa tiene que administrar servidores, bases de datos y copias.
+
+**Soporte del proveedor (peso 10).**
+- Opción 1 (5): soporte oficial de Oracle y Salesforce, con red amplia de partners en todos los países.
+- Opción 2 (4): soporte oficial de Odoo incluido en la suscripción Enterprise, y red de partners.
+- Opción 3 (1): no hay soporte oficial del fabricante; habría que depender de la comunidad o contratar a una empresa externa.
+
+**Independencia del proveedor y migración futura (peso 10).**
+- Opción 1 (1): máxima dependencia: el código Apex de Salesforce y las extensiones de Oracle solo funcionan en sus plataformas, y cambiar de sistema sería muy costoso.
+- Opción 2 (3): la base de Odoo es abierta y se puede volver a Community o autoalojar, pero los módulos Enterprise son de pago y se perderían.
+- Opción 3 (5): todo el código es libre (LGPLv3 y AGPLv3); los datos y el sistema pueden llevarse a cualquier proveedor.
+
+**Integración ERP-CRM (peso 5).**
+- Opción 1 (3): son productos de dos fabricantes distintos y hace falta un conector o una plataforma de integración.
+- Opción 2 (5): ERP y CRM son el mismo sistema, sin integración que mantener.
+- Opción 3 (2): son dos sistemas distintos sin conector oficial entre ellos, así que habría que desarrollarlo.
+
+### 5.2 Totales ponderados
+
+Total ponderado = suma de (peso × puntuación) / 100.
+
+| Opción | Cálculo | Total |
+|---|---|---|
+| Opción 1: Oracle + Salesforce | (125 + 100 + 15 + 75 + 50 + 10 + 15) / 100 | **3,90** |
+| Opción 2: Odoo Enterprise (Odoo.sh) | (100 + 60 + 60 + 60 + 40 + 30 + 25) / 100 | **3,75** |
+| Opción 3: Odoo Community + SuiteCRM | (50 + 40 + 45 + 45 + 10 + 50 + 10) / 100 | **2,50** |
+
+### 5.3 Recomendación final
+
+Se recomienda la **opción 1: Oracle Fusion Cloud ERP + Salesforce**. Es la que mejor cubre lo que más pesa en esta empresa: varias sociedades, varias monedas y cumplimiento legal en 5 países, todo en la nube y con soporte oficial. La opción 2 queda muy cerca y sería la alternativa si el presupuesto no permite la primera. La opción 3 se descarta: es libre y barata en licencias, pero no está a la altura de una consultora de 400 empleados con estas exigencias legales.
+
+### 5.4 Riesgos de la recomendación
+
+- **Coste total:** es la opción más cara, tanto en suscripciones (dos productos para 400 usuarios) como en implantación. Hay que negociar contratos plurianuales y controlar el número de licencias.
+- **Dependencia del proveedor:** la empresa queda atada a Oracle y Salesforce. Si suben precios o cambian condiciones, cambiar de sistema es caro y lento.
+- **Soporte:** aunque es oficial, el soporte avanzado suele pagarse aparte, y conviene contar con un partner de implantación en cada país.
+- **Migración futura:** los desarrollos en Apex y las personalizaciones de Oracle no se pueden llevar a otro sistema. Para reducir el riesgo, conviene limitar las personalizaciones y exportar los datos periódicamente en formatos abiertos.
+- **Integración:** al ser dos fabricantes, la conexión entre ERP y CRM es un punto de fallo que hay que mantener en cada actualización (Oracle publica 4 al año y Salesforce 3).
