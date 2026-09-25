@@ -79,4 +79,32 @@ La licencia AGPL va un paso más allá: si modificas el programa y lo ofreces co
 | Módulos principales | Finanzas y contabilidad, gestión financiera, gestión de proyectos, compras, gestión del rendimiento empresarial (EPM) y, en la cadena de suministro, planificación, ejecución, gestión de pedidos y logística | [Oracle Fusion Cloud ERP - Oracle](https://www.oracle.com/erp/) | 25/09/2026 |
 | Requisitos | Solo en el lado del cliente: navegador compatible en una versión mínima y conexión a Internet. En móviles solo se admite la versión más reciente del navegador. El complemento ADF Desktop Integration para Excel exige versiones concretas de Windows y Excel. No hay requisitos de servidor para la empresa | [Oracle Fusion Cloud Applications System Requirements - Oracle Docs](https://docs.oracle.com/en/cloud/saas/applications-common/25d/oacpr/computer-and-other-system-requirements.html) | 25/09/2026 |
 
-**Observación:** al tratarse de SaaS, los campos de SGBD y requisitos no describen lo que
+**Observación:** al tratarse de SaaS, los campos de SGBD y requisitos no describen lo que instala la empresa, sino lo que gestiona Oracle. Esto supone menos carga técnica, pero más dependencia del proveedor.
+
+### 3.3 CRM libre: SuiteCRM
+
+| Dato | Valor | Fuente | Fecha de consulta |
+|---|---|---|---|
+| Licencia | AGPLv3 (GNU Affero General Public License v3). Si se modifica y se ofrece como servicio web, hay que dar el código modificado a los usuarios | [Licensing - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/licensing/) | 25/09/2026 |
+| Versión vigente | SuiteCRM 8.10.2 (publicada el 31/07/2026) | [8.10 Releases - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/releases/8.10/) | 25/09/2026 |
+| Lenguaje del servidor | PHP (8.2, 8.3 u 8.4). La interfaz está hecha en Angular | [Compatibility Matrix - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/compatibility-matrix/) | 25/09/2026 |
+| SGBD compatibles | MariaDB (10.6, 10.11, 11.4, 11.8) y MySQL (8.0, 8.4). La versión 8 ya no admite SQL Server | [Compatibility Matrix - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/compatibility-matrix/) | 25/09/2026 |
+| Modalidad (local / nube) | Instalación local en servidor propio, en un proveedor de nube pública o en hosting gestionado de pago ofrecido por SuiteCRM Ltd | [SuiteCRM - GitHub](https://github.com/SuiteCRM/SuiteCRM) | 25/09/2026 |
+| Módulos principales | Ventas (clientes potenciales, cuentas, contactos, oportunidades, presupuestos, facturas y contratos), marketing (campañas, listas de público objetivo, encuestas, eventos), atención al cliente (casos, base de conocimiento), proyectos, calendario, correo e informes | [Documentación de usuario - SuiteCRM Docs](https://docs.suitecrm.com/8.x/user/) | 25/09/2026 |
+| Requisitos | Linux, Unix o macOS con PHP 8.2-8.4, servidor web Apache 2.4 y MariaDB o MySQL. Navegador: Chrome 143+, Firefox 140 o 146+, Edge 143+ o Safari 26+ | [Compatibility Matrix - SuiteCRM Docs](https://docs.suitecrm.com/8.x/admin/compatibility-matrix/) | 25/09/2026 |
+
+### 3.4 CRM propietario: Salesforce
+
+| Dato | Valor | Fuente | Fecha de consulta |
+|---|---|---|---|
+| Licencia |  |  |  |
+| Versión vigente |  |  |  |
+| Lenguaje del servidor |  |  |  |
+| SGBD compatibles |  |  |  |
+| Modalidad (local / nube) |  |  |  |
+| Módulos principales |  |  |  |
+| Requisitos |  |  |  |
+
+## 4. Fe de erratas del tema 2
+
+## 5. Matriz de decisión y recomendación
